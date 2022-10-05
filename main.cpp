@@ -6,7 +6,8 @@
 
 #define TEST_CASE(index, result) std::cout << "TEST CASE #" << index << ": "; std::cout << (result ? "PASS" : "! FAIL") << std::endl;
 
-// Hint: Fib(0) = 0, Fib(1) = 1
+// Hint: Fib(0) = 0
+// Hint: Fib(1) = 1
 // Hint: Fib(n) = Fib(n-1) + Fib(n-2)
 // Fibonacci series: 0, 1, 1, 2, 3, 5, 8, 13, 21…
 
