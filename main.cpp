@@ -9,8 +9,7 @@ int testCaseIndex = 0;
 // Hint: Fib(n) = Fib(n-1) + Fib(n-2)
 // Hint: Fibonacci series: 0, 1, 1, 2, 3, 5, 8, 13, 21…
 
-// Return the sum of the first n numbers in the Fibonacci sequence,
-// which begins with 0 and 1 as the first two terms
+// Returns the sum of the first n numbers in the Fibonacci sequence
 int CalcSumOfFirstNFibonacciNumbers(int n)
 {
     return 0;
