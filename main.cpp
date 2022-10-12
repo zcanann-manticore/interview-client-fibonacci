@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-#define TEST_CASE(index, result) std::cout << "TEST CASE #" << index << ": "; std::cout << (result ? "PASS" : "! FAIL") << std::endl;
+int testCaseIndex = 0;
+#define TEST_CASE(result) std::cout << "TEST CASE #" << ++testCaseIndex << ": "; std::cout << (result ? "PASS" : "!FAIL") << std::endl;
 
 // Hint: Fib(0) = 0
 // Hint: Fib(1) = 1
@@ -17,12 +18,12 @@ int CalcSumOfFirstNFibonacciNumbers(int n)
 
 void RunTestCases()
 {
-    TEST_CASE(1, CalcSumOfFirstNFibonacciNumbers(0) == 0);
-    TEST_CASE(2, CalcSumOfFirstNFibonacciNumbers(1) == 0);
-    TEST_CASE(3, CalcSumOfFirstNFibonacciNumbers(2) == 1);
-    TEST_CASE(4, CalcSumOfFirstNFibonacciNumbers(3) == 2);
-    TEST_CASE(5, CalcSumOfFirstNFibonacciNumbers(4) == 4);
-    TEST_CASE(6, CalcSumOfFirstNFibonacciNumbers(5) == 7);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(0) == 0);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(1) == 0);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(2) == 1);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(3) == 2);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(4) == 4);
+    TEST_CASE(CalcSumOfFirstNFibonacciNumbers(5) == 7);
 }
 
 int main()
